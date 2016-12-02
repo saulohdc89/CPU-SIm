@@ -1,0 +1,11 @@
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\bin\Debug\CPUSim.exe.config
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\bin\Debug\CPUSim.exe
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\bin\Debug\CPUSim.pdb
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\obj\Debug\CPUSim.csprojResolveAssemblyReference.cache
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\obj\Debug\CPUSim.Properties.Resources.resources
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\obj\Debug\CPUSim.csproj.GenerateResource.Cache
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\obj\Debug\CPUSim.exe
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\obj\Debug\CPUSim.pdb
+c:\users\cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\obj\Debug\CPUSim.Form1.resources
+C:\Users\Cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\bin\Debug\CsvHelper.dll
+C:\Users\Cliente\documents\visual studio 2015\Projects\CPUSim\CPUSim\bin\Debug\CsvHelper.xml

@@ -121,32 +121,35 @@ public class CPU
                     _PC = (byte)(_PC + 1);
                     break;
                 case opcode.ADD:
-                    byte[] conv = new byte[2];
-                    conv[0] = _AC;
-                    conv[1] = read(read(_PC));
+             //       byte[] conv = new byte[2];
+                //    conv[0] = _AC;
+                 //    conv[1] = read(read(_PC));
                     // short data = BitConverter.ToInt16(conv,0);
 
                     //byte g =_AC;
                     //sbyte q =(read(read(_PC));
                     //sbyte t = (sbyte)(g + q);
                     // if (t < 0)
-                    int result = _AC + read(read(_PC));
-                    _AC = (byte)(result & 0xFF);
+                    int resultADD = _AC + read(read(_PC));
+                    _AC = (byte)(resultADD & 0xFF);
                     _PC = (byte)(_PC + 1);
                     updateFLAGS();
                     break;
                 case opcode.OR:
-                    _AC = (byte)(_AC | read(read(_PC)));
+                    int resultOR = (_AC | read(read(_PC)));
+                    _AC = (byte)resultOR;
                     _PC = (byte)(_PC + 1);
                     updateFLAGS();
                     break;
                 case opcode.AND:
-                    _AC = (byte)(_AC & read(read(_PC)));
+                    int resultAND = (_AC & read(read(_PC)));
+                    _AC = (byte)resultAND;
                     _PC = (byte)(_PC + 1);
                     updateFLAGS();
                     break;
                 case opcode.NOT:
-                    _AC = (byte)(~(_AC));
+                    int resultNOT = ~(_AC);
+                    _AC = (byte)resultNOT;
                     updateFLAGS();
                     break;
                 case opcode.JMP:
@@ -177,7 +180,7 @@ public class CPU
             }
             if (_PC >= 255)
             {
-                _PC = 0;
+              //  _PC = 0;
                 return false;
             }
             return true;

@@ -83,6 +83,9 @@ namespace CPUSim
             {
                 //enter key is down
                 DataGridViewRow newDataRow = dataGridView1.Rows[IndexRow];
+                if (textBox1.Text == "") {
+                    textBox1.Text = "0";
+                }
                 if (Int32.Parse(textBox1.Text) > 255)
                 {
                     textBox1.Text = "255";
@@ -169,6 +172,7 @@ namespace CPUSim
             {
 
                 dataGridView1.Rows[(int)_cpu.GetPC()].Selected = true;
+                dataGridView1.FirstDisplayedScrollingRowIndex = (int)_cpu.GetPC();
             }
             dataGridView1.Rows[_cpu.GetPC()].Cells[0].Value = "*";
             textBox2.Text = (_cpu.GetPC().ToString());
@@ -212,6 +216,7 @@ namespace CPUSim
             {
 
                 dataGridView1.Rows[(int)_cpu.GetPC()].Selected = true;
+                dataGridView1.FirstDisplayedScrollingRowIndex = (int)_cpu.GetPC();
             }
             textBox2.Text = (_cpu.GetPC().ToString());
             textBox3.Text = (_cpu.GetAC().ToString());
